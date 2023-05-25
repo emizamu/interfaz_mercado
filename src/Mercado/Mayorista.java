@@ -8,7 +8,7 @@ public class Mayorista {//rut, nombre, dirección, lista de productos
     private String rut;
     private String nombre;
     private String direccion;
-    private ArrayList<Producto>listaProductos;
+    //private ArrayList<Producto>listaProductos;
     
     public String getRut(){
         return rut;
