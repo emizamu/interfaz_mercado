@@ -8,7 +8,6 @@ public class Puesto {
     private int cantEmpleados;
 
     public Puesto(String unaIdentificacion, Dueno unDueno, String unaUbicacion, int cantidadE) {
-
         identificacion = unaIdentificacion;
         elDueno = unDueno;
         ubicacion = unaUbicacion;
@@ -30,6 +29,27 @@ public class Puesto {
 
     public int getCantEmpleados() {
         return this.cantEmpleados;
+    }
+
+    public void setIdentificacion(String identificacion) {
+        this.identificacion = identificacion;
+    }
+
+    public void setElDueno(Dueno elDueno) {
+        this.elDueno = elDueno;
+    }
+
+    public void setUbicacion(String ubicacion) {
+        this.ubicacion = ubicacion;
+    }
+
+    public void setCantEmpleados(int cantEmpleados) {
+        this.cantEmpleados = cantEmpleados;
+    }
+
+    @Override
+    public String toString() {
+        return "Puesto{" + "identificacion=" + identificacion + ", elDueno=" + elDueno + ", ubicacion=" + ubicacion + ", cantEmpleados=" + cantEmpleados + '}';
     }
 
 }
